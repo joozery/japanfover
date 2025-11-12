@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Noto Sans Thai', 'Prompt', sans-serif;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.japanese-text {
+  font-family: 'Noto Sans JP', sans-serif;
+}

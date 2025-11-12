@@ -1,0 +1,10 @@
+## Pages
+- [| Japanese For Everyday`}](/category): No description available
+- [Japanese For Everyday - เรียนภาษาญี่ปุ่นออนไลน์ฟรี](/home): เรียนภาษาญี่ปุ่นออนไลน์ฟรี ตั้งแต่ N5 ถึง N1 พร้อมระบบคะแนนและ Leaderboard
+- [Leaderboard | Japanese For Everyday](/leaderboard): ดูอันดับคะแนนของผู้เรียนทั้งหมด
+- [เข้าสู่ระบบ - Japanese For Everyday](/login): No description available
+- [คำศัพท์ของฉัน | Japanese For Everyday](/vocabulary): ดูคำศัพท์ทั้งหมดที่คุณเคยเจอ
+- [ทดสอบระดับ | Japanese For Everyday](/leveltest): ทดสอบระดับภาษาญี่ปุ่นของคุณ
+- [โปรไฟล์ของฉัน - Japanese For Everyday](/account): No description available
+- [ผลคะแนน | Japanese For Everyday](/quiz): No description available
+- [สมัครสมาชิก - Japanese For Everyday](/register): No description available
