@@ -86,11 +86,11 @@ const RegisterPage = () => {
           
           {/* Content */}
           <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16 text-white">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-            >
+        >
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
                 <Star className="w-5 h-5 fill-white" />
                 <span className="text-sm font-medium">เริ่มต้นฟรี ไม่มีค่าใช้จ่าย</span>
@@ -169,7 +169,7 @@ const RegisterPage = () => {
               className="space-y-5"
             >
               {/* Name Input */}
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <Label htmlFor="name" className="text-sm font-medium text-gray-700">
                   ชื่อ
                 </Label>
@@ -188,7 +188,7 @@ const RegisterPage = () => {
               </div>
 
               {/* Email Input */}
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium text-gray-700">
                   อีเมล
                 </Label>
@@ -207,7 +207,7 @@ const RegisterPage = () => {
               </div>
 
               {/* Password Input */}
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <Label htmlFor="password" className="text-sm font-medium text-gray-700">
                   รหัสผ่าน
                 </Label>
@@ -252,7 +252,7 @@ const RegisterPage = () => {
                 ) : (
                   'สร้างบัญชีฟรี'
                 )}
-              </Button>
+                </Button>
             </motion.form>
 
             {/* Divider */}
@@ -283,7 +283,7 @@ const RegisterPage = () => {
               </p>
             </motion.div>
           </motion.div>
-        </div>
+              </div>
       </div>
     </>
   );

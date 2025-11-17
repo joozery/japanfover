@@ -1,18 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rat, Utensils, Palette, Hash, Users, Hand, Cloud, Clock } from 'lucide-react';
+import { Rat, Utensils, Palette, Hash, Users, Cloud, MessageCircle, Briefcase, Flower2, Car } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { categories } from '@/data/vocabularyData';
 
 const categoryIcons = {
-  animals: Rat,
-  food: Utensils,
-  colors: Palette,
-  numbers: Hash,
+  greetings: MessageCircle,
   family: Users,
-  body: Hand,
-  weather: Cloud,
-  time: Clock
+  animals: Rat,
+  work: Briefcase,
+  numbers: Hash,
+  food: Utensils,
+  seasons: Flower2,
+  colors: Palette,
+  vehicles: Car,
+  weather: Cloud
 };
 
 const CategoriesSection = () => {

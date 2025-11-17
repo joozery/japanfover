@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Trophy, Medal, Award, Rat, Utensils, Palette, Hash, Users as UsersIcon, Hand, Cloud, Clock } from 'lucide-react'; // Added category icons
+import { ArrowLeft, Trophy, Medal, Award, Rat, Utensils, Palette, Hash, Users, Cloud, MessageCircle, Briefcase, Flower2, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -12,14 +12,16 @@ import { getLeaderboard } from '@/utils/quizUtils';
 
 // Map category IDs to Lucide icons
 const categoryIcons = {
+  greetings: MessageCircle,
+  family: Users,
   animals: Rat,
-  food: Utensils,
-  colors: Palette,
+  work: Briefcase,
   numbers: Hash,
-  family: UsersIcon,
-  body: Hand,
-  weather: Cloud,
-  time: Clock
+  food: Utensils,
+  seasons: Flower2,
+  colors: Palette,
+  vehicles: Car,
+  weather: Cloud
 };
 
 const LeaderboardPage = () => {

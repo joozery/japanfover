@@ -46,7 +46,7 @@ const Navbar = () => {
               </span>
               <span className="text-xs sm:text-sm font-semibold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
                 For Everyday
-              </span>
+            </span>
             </div>
           </Link>
 

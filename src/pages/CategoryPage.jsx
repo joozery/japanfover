@@ -3,21 +3,23 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Play, Rat, Utensils, Palette, Hash, Users, Hand, Cloud, Clock } from 'lucide-react'; // Updated icons
+import { ArrowLeft, Play, Rat, Utensils, Palette, Hash, Users, Cloud, MessageCircle, Briefcase, Flower2, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { categories } from '@/data/vocabularyData';
 
 // Map category IDs to Lucide icons
 const categoryIcons = {
-  animals: Rat, // Changed from 🐾
-  food: Utensils, // Changed from 🍱
-  colors: Palette, // Changed from 🎨
-  numbers: Hash, // Changed from 🔢
-  family: Users, // Changed from 👨‍👩‍👧‍👦
-  body: Hand, // Changed from 🙋
-  weather: Cloud, // Changed from ⛅
-  time: Clock // Changed from ⏰
+  greetings: MessageCircle,
+  family: Users,
+  animals: Rat,
+  work: Briefcase,
+  numbers: Hash,
+  food: Utensils,
+  seasons: Flower2,
+  colors: Palette,
+  vehicles: Car,
+  weather: Cloud
 };
 
 const CategoryPage = () => {

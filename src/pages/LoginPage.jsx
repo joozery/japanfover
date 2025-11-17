@@ -82,7 +82,7 @@ const LoginPage = () => {
           >
             {/* Logo/Header */}
             <div className="text-center mb-8">
-              <motion.div
+        <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
@@ -94,7 +94,7 @@ const LoginPage = () => {
                 ยินดีต้อนรับกลับมา
               </h1>
               <p className="text-gray-600">เข้าสู่ระบบเพื่อเริ่มต้นการเรียนรู้</p>
-            </div>
+              </div>
 
             {/* Form */}
             <motion.form
@@ -105,7 +105,7 @@ const LoginPage = () => {
               className="space-y-6"
             >
               {/* Email Input */}
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium text-gray-700">
                   อีเมล
                 </Label>
@@ -124,7 +124,7 @@ const LoginPage = () => {
               </div>
 
               {/* Password Input */}
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password" className="text-sm font-medium text-gray-700">
                     รหัสผ่าน
@@ -161,7 +161,7 @@ const LoginPage = () => {
                 ) : (
                   'เข้าสู่ระบบ'
                 )}
-              </Button>
+                </Button>
             </motion.form>
 
             {/* Divider */}
@@ -251,7 +251,7 @@ const LoginPage = () => {
             >
               日本語
             </motion.div>
-          </div>
+              </div>
         </motion.div>
       </div>
     </>
