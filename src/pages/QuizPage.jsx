@@ -74,10 +74,25 @@ const QuizPage = () => {
   };
 
   const playAudio = () => {
-    toast({
-      title: '🔊 เสียงกำลังเล่น',
-      description: 'ฟีเจอร์เสียงจะพร้อมใช้งานเร็วๆ นี้!',
-    });
+    const currentWord = questions[currentQuestion];
+    
+    if (currentWord.audio) {
+      // Play audio from base64 or URL
+      const audio = new Audio(currentWord.audio);
+      audio.play().catch(err => {
+        console.error('Error playing audio:', err);
+        toast({
+          title: '❌ ไม่สามารถเล่นเสียงได้',
+          description: 'เกิดข้อผิดพลาดในการเล่นไฟล์เสียง',
+          variant: 'destructive',
+        });
+      });
+    } else {
+      toast({
+        title: 'ℹ️ ไม่มีไฟล์เสียง',
+        description: 'คำนี้ยังไม่มีไฟล์เสียง',
+      });
+    }
   };
 
   if (questions.length === 0) {

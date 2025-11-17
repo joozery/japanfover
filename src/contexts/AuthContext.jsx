@@ -30,6 +30,7 @@ export const AuthProvider = ({ children }) => {
       id: Date.now().toString(),
       email,
       name: email.split('@')[0],
+      role: 'user',
       level: 'N5',
       createdAt: new Date().toISOString()
     };
@@ -38,11 +39,30 @@ export const AuthProvider = ({ children }) => {
     return userData;
   };
 
+  const adminLogin = (email, password) => {
+    // Admin credentials check (mock)
+    if (email === 'admin@japanfever.com' && password === 'admin123') {
+      const adminData = {
+        id: 'admin-1',
+        email,
+        name: 'Admin',
+        role: 'admin',
+        level: 'N1',
+        createdAt: new Date().toISOString()
+      };
+      localStorage.setItem('user', JSON.stringify(adminData));
+      setUser(adminData);
+      return adminData;
+    }
+    return null;
+  };
+
   const register = (email, password, name) => {
     const userData = {
       id: Date.now().toString(),
       email,
       name,
+      role: 'user',
       level: 'N5',
       createdAt: new Date().toISOString()
     };
@@ -64,8 +84,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const isAdmin = () => {
+    return user?.role === 'admin';
+  };
+
   return (
-    <AuthContext.Provider value={{ user, login, register, logout, updateUserLevel, isLoading }}>
+    <AuthContext.Provider value={{ user, login, adminLogin, register, logout, updateUserLevel, isAdmin, isLoading }}>
       {!isLoading && children}
     </AuthContext.Provider>
   );
